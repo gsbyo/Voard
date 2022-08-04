@@ -5,9 +5,11 @@
 Config
  - SecurityConfiguration
  - QuerydslConfiguration
+ 
 Controller
  - Board
  - Login
+ 
 Dto
  - CategoryDto
  - MemberDto
@@ -22,8 +24,8 @@ Repository
  * Entity와 연관되어 Repository - RepositoryCustom - RepositoryImpl 구성
  
 Security 
- - CustomAccessDeniedHandler -> Implement AccessDeniedHandler
- - CustomAuthenticationEntryPoint -> Implement AuthenticationEntryPoint
+ - CustomAccessDeniedHandler -> Implement AccessDeniedHandler (권한 거부 redirect("/board")로 설정)
+ - CustomAuthenticationEntryPoint -> Implement AuthenticationEntryPoint (인증 요구 redirect("/login")로 설정)
 
 Service 
  - CategoryService
@@ -48,6 +50,7 @@ Service
 ![postService](https://user-images.githubusercontent.com/82531576/182931732-3fb7a6fb-ecd0-4569-aadd-c9db45601f94.PNG)
 
 ![paging](https://user-images.githubusercontent.com/82531576/182931756-381e0288-555e-46b4-9392-8b27b70d4393.PNG)
+
 
 
 
