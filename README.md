@@ -61,4 +61,8 @@ Service
 ![pathvariable](https://user-images.githubusercontent.com/82531576/182971115-6085eb4d-6492-4748-a792-18b549a028f2.PNG)
 
 
+보완 예정
+ - Entity -> Dto 로 매핑하여 viewlayer 리턴 
+
+
 
